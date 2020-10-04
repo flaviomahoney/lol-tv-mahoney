@@ -1,0 +1,7 @@
+<div class="container">
+    <% @posts.each do |post| %>
+        <p><%= post.title %></p>
+        <p><%= post.description %></p>
+        <p><%= post.date %></p>
+    <% end %>
+</div>
