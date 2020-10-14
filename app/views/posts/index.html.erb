@@ -1,7 +1,10 @@
 <div class="container">
     <% @posts.each do |post| %>
-        <p><%= post.title %></p>
-        <p><%= post.description %></p>
-        <p><%= post.date %></p>
+        <div class="posts">
+            <strong><%= post.title %></strong>
+            <p><%= post.description %></p>
+            <i>Date: <%= post.date %></i>
+            <br><br>
+        </div>
     <% end %>
 </div>
